@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="904.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.Controller">
+   <children>
+      <Pane layoutX="13.0" layoutY="13.0" prefHeight="533.0" prefWidth="877.0" style="-fx-background-color: #fff; -fx-background-radius: 10px;">
+         <children>
+            <JFXButton layoutX="243.0" layoutY="358.0" onAction="#btnSaludar" prefHeight="36.0" prefWidth="103.0" style="-fx-background-color: #365ae7;" text="Saludar" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft YaHei UI" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label alignment="CENTER" layoutX="342.0" layoutY="14.0" prefHeight="22.0" prefWidth="193.0" text="Ejercicio Intive" textAlignment="CENTER">
+               <font>
+                  <Font name="Microsoft JhengHei UI" size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="336.0" layoutY="47.0" prefHeight="30.0" prefWidth="205.0" text="Nombre: Perrone Maximiliano" textAlignment="CENTER">
+               <font>
+                  <Font name="Microsoft YaHei UI Light" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="129.0" prefHeight="30.0" prefWidth="96.0" text="Nombre">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="nombreTF" layoutX="163.0" layoutY="132.0" prefHeight="25.0" prefWidth="183.0" />
+            <JFXTextField fx:id="fechaTF" layoutX="163.0" layoutY="297.0" prefHeight="25.0" prefWidth="183.0" />
+            <Label layoutX="45.0" layoutY="191.0" prefHeight="25.0" prefWidth="96.0" text="Pais">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="294.0" prefHeight="30.0" prefWidth="86.0" text="Fecha">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="15.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="paisCB" layoutX="169.0" layoutY="191.0" prefHeight="25.0" prefWidth="177.0" promptText="Select" />
+            <Label fx:id="mensajeTF" alignment="CENTER" contentDisplay="CENTER" layoutX="63.0" layoutY="424.0" prefHeight="63.0" prefWidth="304.0" wrapText="true">
+               <font>
+                  <Font name="Microsoft YaHei UI" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXTreeTableView fx:id="treeTableView" layoutX="439.0" layoutY="151.0" prefHeight="346.0" prefWidth="441.0">
+         <columnResizePolicy>
+            <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <columns>
+            <TreeTableColumn fx:id="nombreCol" prefWidth="75.0" text="Nombre" />
+            <TreeTableColumn fx:id="paisCol" prefWidth="75.0" text="Pais" />
+            <TreeTableColumn fx:id="fechaCol" prefWidth="75.0" text="Fecha" />
+         </columns>
+      </JFXTreeTableView>
+   </children>
+</AnchorPane>
